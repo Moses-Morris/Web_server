@@ -36,5 +36,13 @@ mocha and chai:
 These tools are used for testing and debugging.
 You can use them with Sinon module to spy on the app functions.
 
+
 Router in Express:
+
 Create a new router for each file in the application.
+const router = express.Router()
+app.use('/', router)
+=> in the Routes folder
+
+
+concepts : express, routes, rendering, middleware, backend, views, params, responses, requests, testing, 

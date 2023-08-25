@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cone Web-Server.</title>
+</head>
+<body>
+    <header>
+        <h1>Users:</h1>
+    </header>
+    <main>
+        <section>
+            <h2> <%= locals.users || "Can Not Fetch users" %></h2>
+            <h3> <%= locals.id || "Can Not Fetch users" %></h3>
+        </section>
+    </main>
+    
+</body>
+</html>

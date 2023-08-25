@@ -1,0 +1,24 @@
+{
+  "name": "web_server",
+  "version": "1.0.0",
+  "description": "Web Server Backend",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.8",
+    "express": "^4.18.2",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.9"
+  }
+}
