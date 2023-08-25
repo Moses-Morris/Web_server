@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corm Posts</title>
+</head>
+<body>
+    <header>
+        <h1>Posts:</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <section>
+                    <h2> <%= locals.posts  || "Can Not Fetch posts" %></h2>
+                </section>
+            </div>
+            <h3> <%= locals.error %></h3>
+            
+            </div>
+        </div>
+    
+</body>
+</html>

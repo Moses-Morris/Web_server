@@ -15,9 +15,15 @@ router.get('/:id', (req, res) => {
 
 //create new post
 router.post('/', (req, res) => {
-    let data = req.body.email;
-    res.render('posts', { posts : req.body.email });
-    console.log(data);
+    if (req.body.email === undefined) {
+       // res.status(400).send("Please enter a valid email address");
+        res.render('posts', { error : "Please enter a valid email address" });
+    }else{
+        let data = req.body.email;
+        res.render('posts', { posts : req.body.email });
+        console.log(data);
+    }
+    
 });
 
 
